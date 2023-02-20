@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
+import { PracticasComponent } from './practicas/practicas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SesionComponent } from './sesion/sesion.component';
     FooterComponent,
     NavbarComponent,
     RegistroComponent,
-    SesionComponent
+    SesionComponent,
+    PracticasComponent
   ],
   imports: [
     BrowserModule,
