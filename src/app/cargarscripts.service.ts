@@ -6,9 +6,10 @@ import { Injectable } from '@angular/core';
 export class CargarscriptsService {
 
   constructor() { }
+
   cargar(archivos:string[]){
     console.log(archivos)
-    for(let archivo of archivos){
+    for (let archivo of archivos){
       console.log(archivo)
       let script = document.createElement("script");
       script.src = archivo;
