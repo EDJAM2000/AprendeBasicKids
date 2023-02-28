@@ -12,7 +12,20 @@ import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { PracticasComponent } from './practicas/practicas.component';
 import { CargarscriptsService } from './cargarscripts.service';
+import { RouterModule, Routes } from '@angular/router';
+import { PortafolioComponent } from './content/portafolio/portafolio.component';
+import { DocenteComponent } from './content/docente/docente.component';
+import { PreciosComponent } from './content/precios/precios.component';
+import { CursosComponent } from './content/cursos/cursos.component';
 
+const appRoutes: Routes=[
+  { path:'', component: InicioComponent},
+  { path:'inicio', component:InicioComponent},
+  { path:'portafolio', component:PortafolioComponent},
+  { path:'docente', component:DocenteComponent},
+  { path:'precios', component:PreciosComponent},
+  { path:'cursos', component:CursosComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +36,17 @@ import { CargarscriptsService } from './cargarscripts.service';
     NavbarComponent,
     RegistroComponent,
     SesionComponent,
-    PracticasComponent
+    PracticasComponent,
+    PortafolioComponent,
+    DocenteComponent,
+    PreciosComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes,{enableTracing:true})
+    
   ],
   providers: [
     CargarscriptsService
