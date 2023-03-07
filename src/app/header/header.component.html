@@ -9,17 +9,17 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" routerLink="/inicio">Inicio</a></li>
-        <li><a class="nav-link scrollto " routerLink="/portafolio">Portafolio</a></li>
-        <li><a class="nav-link scrollto" routerLink="/docente">Docente</a></li>
-        <li><a class="nav-link scrollto" routerLink="/precios">Precios de los cursos</a></li>
-        <li class="dropdown"><a routerLink="#"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
+        <li><a class="nav-link scrollto active" [routerLink]="['inicio']">Inicio</a></li>
+        <li><a class="nav-link scrollto " [routerLink]="['portafolio']">Portafolio</a></li>
+        <li><a class="nav-link scrollto" [routerLink]="['docente']">Docente</a></li>
+        <li><a class="nav-link scrollto" [routerLink]="['precios']">Precios de los cursos</a></li>
+        <li class="dropdown"><a [routerLink]="['#']"><span>Cursos</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Drop Down 1</a></li>
             <li class="dropdown"><a routerLink="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
                 <li><a routerLink="#">Deep Drop Down 1</a></li>
-                <li><a routerLink="#">Deep Drop Down 2</a></li>
+                <li><a routerLink="#">Deep Drop Down 2</a></li> 
                 <li><a routerLink="#">Deep Drop Down 3</a></li>
                 <li><a routerLink="#">Deep Drop Down 4</a></li>
                 <li><a routerLink="#">Deep Drop Down 5</a></li>
