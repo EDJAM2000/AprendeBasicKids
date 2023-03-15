@@ -27,7 +27,7 @@ const appRoutes: Routes=[
   { path:'portafolio', component:PortafolioComponent},
   { path:'docente', component:DocenteComponent},
   { path:'precios', component:PreciosComponent},
-  { path:'cursos', component:CursosComponent}
+  { path:'cursos', component:CursosComponent},
 ]
 @NgModule({
   declarations: [
