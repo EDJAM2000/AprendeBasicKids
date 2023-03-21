@@ -13,14 +13,13 @@
         <li><a class="nav-link scrollto " [routerLink]="['portafolio']">Portafolio</a></li>
         <li><a class="nav-link scrollto" [routerLink]="['docente']">Docente</a></li>
         <li><a class="nav-link scrollto" [routerLink]="['precios']">Precios de los cursos</a></li>
-        
-        
         <li><a class="nav-link scrollto" href="https://api.whatsapp.com/send?phone=528671658285"><i class="bi bi-whatsapp">&nbsp;</i>Contacto</a></li>
+        <li><a class="nav-link scrollto" [routerLink]="['registro']">Registrar</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Iniciar sesion
 </button>
   </div>
@@ -37,9 +36,8 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Favor de ingresar el correo electrónico.</div>
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
@@ -49,7 +47,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Iniciar sesion</button>
+        <button type="button" class="btn btn-success">Iniciar sesion</button>
       </div>
     </div>
   </div>
