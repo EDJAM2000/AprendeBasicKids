@@ -30,6 +30,7 @@ const appRoutes: Routes=[
   { path:'cursos', component:CursosComponent},
   { path:'sesion', component:SesionComponent},
   { path:'registro', component:RegistroComponent}
+
 ]
 @NgModule({
   declarations: [

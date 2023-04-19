@@ -19,9 +19,10 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Iniciar sesion
 </button>
+<a [routerLink]="['']" (click)="cerrarSesion()" *ngIf="usuario_activo==true"><i class="bi bi-box-arrow-right">Cerrar Sesion</i></a>
   </div>
 </header><!-- End Header -->
 
@@ -37,19 +38,19 @@
         <form>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+            <input type="email" name="Correo" [(ngModel)]="form.correo" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1"  class="form-label">Contraseña</label>
+            <input type="password" name="contrasena" [(ngModel)]="form.contrasena" class="form-control" id="exampleInputPassword1">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-success">Iniciar sesion</button>
+        <button type="button" (click)="iniciarSesion()" *ngIf="usuario_activo==false" class="btn btn-success">Iniciar sesion</button>
       </div>
     </div>
   </div>
 </div>
-</body>
+</body>uehdueidhuaedhuehfcuehfueygfbhhy 
